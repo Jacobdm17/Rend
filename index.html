@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staybnb</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div class="header">
+        <nav id="navBar">
+            <a href="index.html"><img src="images/REND-removebg-preview.png" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active"> Home</a></li>
+                <li><a href="#">Accounts</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <a href="https://forms.gle/Km1xb6BTncoQEkrMA" target="_blank" class="register-btn"> FAQ</a>
+            <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+        </nav>
+
+        <!--Search Box Container-->
+        <div class="container">
+            <h1>Protien gum!</h1>
+            <div class="search-bar">
+                <form>
+                    <div class="location-input">
+                        <label>products</label>
+                        <input type="text" placeholder="">
+                    </div>
+                     <div>
+                        <label>Deals</label>
+                        <input type="text" placeholder="">
+                     </div>
+                     <div>
+                        <label>Info</label>
+                        <input type="text" placeholder="">
+                     </div>
+                     <div>
+                        <label></label>
+                        <input type="text" placeholder="">
+                     </div>
+                     <Button type="submit"><img src="images/search.png"></Button>
+                </form>
+            </div>
+        </div>
+  </div>
+
+    <!--exclusives Container-->
+
+    <div class="container">
+       <h2 class="sub-title">Worldwide Shipping to places such as....</h2>
+       <div class="exclusives">
+        <div>
+            <img src="images/image-1.png">
+            <span>
+                <h3>London</h3>
+                <p></p>
+            </span>
+        </div>
+
+        <div>
+            <img src="images/image-2.png">
+            <span>
+                <h3>switzerland</h3>
+                <p></p>
+            </span>
+        </div>
+
+        <div>
+            <img src="images/image-3.png">
+            <span>
+                <h3>australia</h3>
+                <p></p>
+            </span>
+        </div>
+
+        <div>
+            <img src="images/image-4.png">
+            <span>
+                <h3>France</h3>
+                <p></p>
+            </span>
+        </div>
+
+        <div>
+            <img src="images/image-5.png">
+            <span>
+                <h3>Amsterdam</h3>
+                <p></p>
+            </span>
+        </div>
+
+        <div>
+            <img src="images/image-6.png">
+            <span>
+                <h3>Netherlands</h3>
+                <p></p>
+            </span>
+        </div>
+
+        <div>
+            <img src="images/image-7.png">
+            <span>
+                <h3>New york</h3>
+                <p></p>
+            </span>
+        </div>
+
+        <div>
+            <img src="images/image-8.png">
+            <span>
+                <h3>Chicago</h3>
+                <p></p>
+            </span>
+        </div>
+
+        <div>
+            <img src="images/image-9.png">
+            <span>
+                <h3>San Fransicsco</h3>
+                <p></p>
+            </span>
+        </div>
+
+        <div>
+            <img src="images/image-10.png">
+            <span>
+                <h3>Shanghai</h3>
+                <p></p>
+            </span>
+        </div>
+    </div>
+
+    <!--Stories-->
+    <h2 class="sub-title"> Customer Opinions </h2>
+    <div class="stories">
+    <div>
+        <img src="images/Brad_Pitt_2019_by_Glenn_Francis.jpg">
+        <p>"Rend is my favorite gum ive ever had!"</p>
+    </div>
+
+    <div>
+        <img src="images/o0yFQYhYY8fm1sybGjqJscIrhzr.jpg">
+        <p>" Rend helped me increase my protien intake on long days when i dont have time to stop!"</p>
+    </div>
+
+    <div>
+        <img src="images/download-2.jpg">
+        <p>"If you havnt tried rend your missing out"</p>
+    </div>
+  </div>
+  <a href="#" class="start-btn">Start Earning Now</a>
+
+</div>
+</div>
+    <!--Random flavor generator-->
+  <title>Random flavor Generator</title>
+
+<h2 class="sub-title"></h2>
+<div class="flavor"></div>
+
+
+    <h1>Random Flavor Generator</h1>
+    <div class="container">
+        <div class="product" id="product">
+        </div>
+        <button onclick="generateProduct()">Generate Random Flavor</button>
+    </div>
+
+
+
+
+  <!--about-->
+
+  <div class="about-msg">
+    <h2>About Rend</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <!--Footer-->
+  <div class="footer">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i><a>
+    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <hr>
+    <p>Copyright &copy; 2023, Rend Protein gum</p>
+  </div>
+</div>
+<script>
+    var navBar = document.getElementsById("navBar")
+
+
+    function togglebtn() {
+        navBar.classlist.toggle("hidemenu");
+    }
+</script>
+<script>
+    const products = [
+        { name: "Berry Blast", price: "$10", imageUrl: "images/berryBlast.rend.png" },
+        { name: "Blue Razz", price: "$20", imageUrl: "images/bluerazz.rend.png" },
+        { name: "Bubblegum", price: "$30", imageUrl: "images/bubblegum.rend.png" },
+        { name: "Cinnoman", price: "$40", imageUrl: "images/cinnoman.rend.png" },
+        { name: "Spearmint", price: "$50", imageUrl: "images/spearmint.rend.png" }
+    ];
+
+    function generateProduct() {
+        const randomIndex = Math.floor(Math.random() * products.length);
+        const product = products[randomIndex];
+        const productElement = document.getElementById("product");
+        productElement.innerHTML = `
+            <h2>${product.name}</h2>
+            <img src="${product.imageUrl}" alt="${product.name}">
+            <p>Price: ${product.price}</p>
+        `;
+    }
+</script>
+
+
+
+    <script src="https://kit.fontawesome.com/2fff62e537.js" crossorigin="anonymous"></script>    
+</body>
+</html>
